@@ -14,9 +14,9 @@
       "0": {
         "title": "The Brighter Tomorrow Map",
         "content": {
-          "0": "This map is a tool to reconnect our communities so we can effectivly support each other through difficult times",
-          "1": "The Brighter Tomorrow Map is built for you by volunteers at the Focallocal Positive Action Community",
-          "2": "A global Movement for anyone who has had enough of the issues troubling this world and are taking action to build change",
+          "0": "This map is a tool to reconnect our communities so we can effectively support each other when difficult times come",
+          "1": "The Brighter Tomorrow Map is built for you by volunteers at the Focallocal Public Happiness Community",
+          "2": "A Global Movement for anyone who has had enough of the issues troubling this world and want to take action together to build change",
           "3": "This map aims to help people who are homeless find the resources they need to meet their basic needs and begin a path to a brighter future",
           "items": {
             "smiley": "find + post free resources to meet basic needs",
@@ -28,17 +28,17 @@
       "1": {
         "title": "Receive Support",
         "content": {
-          "0": "Use the map to find and post all the free resources in your local area. showers. food. shelter. washing machines. support groups",
+          "0": "Use the map to find/post post all the free resources available in your local area. showers. food. shelter. washing machines. support groups",
           "1": "Many people nearby want to support you building a happier life. Their kind offers can be found on the map",
-          "2": "Please don't ask for money, its not what this map is for. Many charities now advise people not to, and so it risks pushing away those who are trying to help you",
-          "3": "People will help, but only you can change life. Focus on one step towards the life you want each day and it will get better"
+          "2": "Please don't ask users for money, its not what this map is for. Users come here to explore alternative ways they can give support so it risks pushing away those who are trying to help you",
+          "3": "People want to help, but only you can change your life. Focus on taking one step towards the life you want each day and it will get better"
         }
       },
       "2": {
         "title": "Offer Support",
         "content": {
-          "0": "Print the map as a valuable guide to give those on the streets, helping them access resources to improve and change their situation",
-          "1": "The helpless feeling of walking past people who are sleeping on the streets, wanting to help but not knowing what you can do. That changes today!",
+          "0": "Print the map as a valuable guide to give those on the streets, helping people access resources to improve and change their situation",
+          "1": "The helpless feeling of walking past people who are sleeping on the streets, wanting to help but not knowing what you can do. That changes here",
           "2": "Browse suggestions for things you can offer on the map to support people struggling nearby, like;",
           "3": "CV/resume building help. Teach a skill. An intro, old books and advice on starting in your profession. Or simply a cup of tea, or a meal to share a friendly chat and some normality",
           "4": "Post free resources you find onto the map. suit hire for interviews. shelters or religious buildings offering showers. support groups. pass it on coffee. where to find free food"
@@ -78,12 +78,12 @@
       "1": "Next",
       "2": "Submit",
       "3": "Suggestions",
-      "4": "Offer a Resource"
+      "4": "I can.."
     },
     "subs": {
       "0": "'Choose a category' and post your resource",
-      "1": "'Suggestions' browse ideas of what you can offer",
-      "2": "'Offer a Resource' to suggest an new positive action"
+      "1": "'Suggestions' browse the best ideas to offer from users around the world",
+      "2": "'Offer a Resource' Offer something supportive you can do"
     }
   },
   "editEvent": {
@@ -112,7 +112,7 @@
         "4": "How to find it/me",
         "5": "Link"
       },
-      "2": "Join the Global Movement for Positive Change at www.focallocal.org"
+      "2": "Join the Global Public Happiness Movement at www.focallocal.org"
     },
     "btns":{
       "0":"Ok, done!"
@@ -162,14 +162,14 @@
         "title": "Projects",
         "content": {
           "0": "Positive Action Activities",
-          "1": "Brighter Tomorrows map"
+          "1": "Brighter Tomorrows Map"
         }
       },
       "5": {
         "title": "Shop",
         "content": {
-          "0": "Positive Action Shop",
-          "1": "Community Marketplace"
+          "0": "Public Happiness Shop",
+          "1": "not here anymore"
         }
       }
     }
@@ -193,14 +193,14 @@
       "4": {
         "title": "Shop",
         "content": {
-          "0": "Positive Action Shop",
-          "1": "Community Marketplace"
+          "0": "Public Happiness Shop",
+          "1": "its gone"
         }
       },
       "5": {
         "title": "Projects",
         "content": {
-          "0": "Positive Action Activities",
+          "0": "Public Happiness Activities",
           "1": "Brighter Tomorrow Map"
         }
       }
@@ -209,7 +209,7 @@
   "calendar":{
     "section_titles":{
       "0":"Search",
-      "1":"Upcoming Resources",
+      "1":"Current Resources",
       "2":"Past Offerings",
       "sub":{
         "0":"No upcoming offerings :( Please add one!",
@@ -228,7 +228,7 @@
   "map": {
     "text": {
       "0": "Key",
-      "1": "Create your Activity now!"
+      "1": "Post a Resource"
     },
     "btns":{
       "0":"Toggle All"
@@ -257,9 +257,9 @@
     "text": {
       "0": {
         "0": "Welcome to a brighter tomorrow.",
-        "1": "This is a tool to transform homelessness around the world by connecting people, communities and ideas. Click on the buttons bellow to explore what you can do here.",
+        "1": "This is a tool to transform homelessness around the world by connecting people, communities and ideas. Plz take a minute and click on the buttons below to explore what you can do here",
         "2": "Find",
-        "3": "Explore free resources available nearby to meet basic needs and to begin on a path to a brighter future.",
+        "3": "Explore free resources available nearby to meet basic needs and to begin on a path to a brighter future",
         "4": "Map",
         "5": {
           "0": "Double click on map to zoom in.",
@@ -267,14 +267,14 @@
         },
         "6": "Adding Resources",
         "7": {
-          "0": "Click + to add a free resource you've found nearby to help those who are homeless connect with",
+          "0": "Click + to add a free resource you've found nearby to help those who are homeless",
           "1": "(shelters, public toilets, addiction support groups, free suit hire for interviews, etc)",
           "2": "or to offer a resource something you can do for those living on the streets nearby",
-          "3": "Click '?' find great ideas of effective things you can offer to help from around the world."
+          "3": "Click '?' to browse the most effective things you can offer to help, collected from users around the world."
         },
         "8": "Print",
         "9": {
-          "0": "Print a guide of valuable support and resources available in your local area to give out to people who are homeless on the streets.",
+          "0": "Print a valuable guide of all the support and resources available in your local area. Give them out to people who are homeless on the streets.",
           "1": "Or as a useful poster for a wall or window (full functionality coming soon)."
         },
         "10": "Navigation",
@@ -284,7 +284,7 @@
         "14": "Calendar",
         "15": "to search by date, location and resource",
         "16": "Projects",
-        "17": "to see more from Focallocal Positive community.",
+        "17": "to see more from Focallocal Public Happiness Community.",
         "18": "Join",
         "19": "to join out volunteer community creating a world with more peace and happiness."
       }
@@ -295,7 +295,7 @@
       "2": "Map",
       "3": "Hand Out",
       "4": "More",
-      "5": "Close and Begin"
+      "5": "Close Guide and Begin"
     },
     "imgs": {
       "middle_img_path": "/images/graph.svg"
