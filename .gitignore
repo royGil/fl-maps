@@ -3,7 +3,7 @@ settings.json
 mup.json
 deployment.tar
 
-.vscode
+.vscode/
 
 ### SublimeText ###
 # cache files for sublime text
