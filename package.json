@@ -2,9 +2,14 @@
   "name": "fl-events",
   "private": true,
   "scripts": {
-    "start": "meteor --settings settings.json"
+    "start": "meteor --settings settings.json",
+    "chimp-watch": "./node_modules/.bin/chimp .config/chimp-watch.js",
+    "chimp-headless": "./node_modules/.bin/chimp .config/chimp-headless.js"
   },
   "dependencies": {
     "meteor-node-stubs": "~0.2.0"
+  },
+  "devDependencies": {
+    "chimp": "^0.51.1"
   }
 }
