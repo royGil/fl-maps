@@ -1,7 +1,7 @@
 Meteor.startup(function() {
-  AutoForm.setDefaultTemplate('materialize');
+  AutoForm.setDefaultTemplate("materialize");
 
-  $('body').on('click', '[data-action=logout]', function(event) {
+  $("body").on("click", "[data-action=logout]", function(event) {
     event.preventDefault();
     AccountsTemplates.logout();
   });

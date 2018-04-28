@@ -1,115 +1,114 @@
 if (Meteor.isClient) {
-
   FlowRouter.wait();
-  var roles = Meteor.subscribe('roles');
+  var roles = Meteor.subscribe("roles");
   Tracker.autorun(function() {
     if (roles.ready()) {
       FlowRouter.initialize();
     }
   });
-
 }
 
-FlowRouter.route('/home', {
-  name: 'home',
+FlowRouter.route("/home", {
+  name: "home",
   action: function() {
-    BlazeLayout.render('appLayout', {main: 'home'});
+    BlazeLayout.render("appLayout", { main: "home" });
   }
 });
 
-FlowRouter.route('/sign-in', {
-  name: 'signIn'
+FlowRouter.route("/sign-in", {
+  name: "signIn"
 });
 
-FlowRouter.route('/sign-up', {
-  name: 'signUp'
+FlowRouter.route("/sign-up", {
+  name: "signUp"
 });
 
-
-FlowRouter.route('/events/list', {
-  name: 'calendar',
+FlowRouter.route("/events/list", {
+  name: "calendar",
   action: function() {
-    BlazeLayout.render('appLayout', {main: 'calendar'});
+    BlazeLayout.render("appLayout", { main: "calendar" });
   }
 });
 
-FlowRouter.route('/events/new', {
-  name: 'events.form',
+FlowRouter.route("/events/new", {
+  name: "events.form",
   action: function() {
-    BlazeLayout.render('appLayout', {main: 'eventsForm'});
+    BlazeLayout.render("appLayout", { main: "eventsForm" });
   }
 });
 
-FlowRouter.route('/', {
-  name: 'map',
+FlowRouter.route("/", {
+  name: "map",
   action: function() {
-    BlazeLayout.render('appLayout', {main: 'map'});
+    BlazeLayout.render("appLayout", { main: "map" });
   }
 });
 
-FlowRouter.route('/events/:_id', {
-  name: 'eventById',
+FlowRouter.route("/events/:_id", {
+  name: "eventById",
   action: function() {
-    BlazeLayout.render('appLayout', {main: 'event'});
+    BlazeLayout.render("appLayout", { main: "event" });
   }
 });
 
 var adminRoutes = FlowRouter.group({
-  name: 'godmodeRoutes',
-  prefix: '/godmode',
-  triggersEnter: [function(context, redirect) {
-    if (!Meteor.userId()) {
-      FlowRouter.go('/sign-in');
-    }
+  name: "godmodeRoutes",
+  prefix: "/godmode",
+  triggersEnter: [
+    function(context, redirect) {
+      if (!Meteor.userId()) {
+        FlowRouter.go("/sign-in");
+      }
 
-    if (Roles.subscription.ready()) {
-      if (Roles.userIsInRole(Meteor.userId(), ['admin'])) {
-        return true;
-      } else {
-        FlowRouter.go('/');
+      if (Roles.subscription.ready()) {
+        if (Roles.userIsInRole(Meteor.userId(), ["admin"])) {
+          return true;
+        } else {
+          FlowRouter.go("/");
+        }
       }
     }
-  }]
+  ]
 });
 
-adminRoutes.route('/', {
-  name: 'dashboard',
+adminRoutes.route("/", {
+  name: "dashboard",
   action: function() {
-    BlazeLayout.render('dashboardLanding');
+    BlazeLayout.render("dashboardLanding");
   }
 });
 
-adminRoutes.route('/manage', {
-  name: 'manage',
+adminRoutes.route("/manage", {
+  name: "manage",
   action: function() {
-    BlazeLayout.render('manage');
+    BlazeLayout.render("manage");
   }
 });
 
-adminRoutes.route('/categories', {
-  name: 'categories',
+adminRoutes.route("/categories", {
+  name: "categories",
   action: function() {
-    BlazeLayout.render('categories');
+    BlazeLayout.render("categories");
   }
 });
 
-adminRoutes.route('/reported', {
-  name: 'reported',
+adminRoutes.route("/reported", {
+  name: "reported",
   action: function() {
-    BlazeLayout.render('reported');
+    BlazeLayout.render("reported");
   }
 });
 
-adminRoutes.route('/users', {
-  name: 'users',
+adminRoutes.route("/users", {
+  name: "users",
   action: function() {
-    BlazeLayout.render('users');
+    BlazeLayout.render("users");
   }
 });
 
-adminRoutes.route('/notifications', {
-  name: 'notifications',
+adminRoutes.route("/notifications", {
+  name: "notifications",
   action: function() {
-    BlazeLayout.render('notifications');
+    BlazeLayout.render("notifications");
   }
 });
