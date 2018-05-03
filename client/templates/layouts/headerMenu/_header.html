@@ -33,29 +33,18 @@
            {{> aboutDropDown}}
          </ul>
 
-         <ul id="shop-dropdown" class="dropdown-content">
-           {{> shopDropDown}}
-         </ul>
-
          <ul id="projects-dropdown" class="dropdown-content">
            {{> projectsDropDown}}
          </ul>
 
           <ul class="left hide-left-links nav-format">
             <li>
-              <a href="http://focallocal.org/about" title="About" class="center-align dropdown-button" data-activates="about-dropdown">
+              <a href="http://about.focallocal.org" title="About" class="center-align dropdown-button" data-activates="about-dropdown">
                   <i class="material-icons">info</i>
                   <div>{{_ "leftLinks.content.0"}}</div>
               </a>
             </li>
-            <li>
-              <a href="#!" title="Projects" class="center-align dropdown-button" data-activates="projects-dropdown">
-                <i class="material-icons">developer_board</i>
-                <div>
-                  {{_ "leftLinks.content.4.title"}}
-                </div>
-              </a>
-            </li>
+
             <li class="{{liClass}}">
                 <a href="http://news.focallocal.org/" title="News" class="center-align">
                     <i class="material-icons">public</i>
@@ -69,20 +58,41 @@
                     <div>{{_ "leftLinks.content.2"}}</div>
                 </a>
             </li>
+
+            <li>
+                <a href="http://activities.focallocal.org/" title="Activites" class="center-align">
+                  <i class="material-icons">directions_walk</i>
+                  <div>
+                    {{_ "leftLinks.content.6"}}
+                  </div>
+                </a>
+              </li>
+
+            <li>
+              <a href="http://shop.focallocal.org/" title="Shop" class="center-align">
+                <i class="material-icons">shop</i>
+                <div>
+                  {{_ "leftLinks.content.5"}}
+                </div>
+              </a>
+            </li>
+
             <li class="{{liClass}}">
                 <a href="http://focallocal.org/" title="Map" class="center-align">
                     <i class="material-icons">flare</i>
                     <div>{{_ "leftLinks.content.3"}}</div>
                 </a>
             </li>
+
             <li>
-              <a href="#!" title="Shop" class="center-align dropdown-button" data-activates="shop-dropdown">
-                <i class="material-icons">shop</i>
+              <a href="#!" title="Projects" class="center-align dropdown-button" data-activates="projects-dropdown">
+                <i class="material-icons">developer_board</i>
                 <div>
-                  {{_ "leftLinks.content.5.title"}}
+                  {{_ "leftLinks.content.4.title"}}
                 </div>
               </a>
             </li>
+
           </ul>
 
           <ul class="side-nav" id="side-nav-left">

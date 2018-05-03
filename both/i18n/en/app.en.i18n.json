@@ -69,9 +69,8 @@
       "1": "2. Give it a Name",
       "2": "3. Select an Address",
       "3": "4. Choose a specific meeting point",
-      "4": "5. How will people recognise you?",
-      "5": "6. Choose a Date and Time",
-      "6": "7. Description/More Details"
+      "4": "5. Choose a Date and Time",
+      "5": "6. Description/More Details"
     },
     "btns": {
       "0": "Back",
@@ -82,7 +81,7 @@
     },
     "subs": {
       "0": "'Choose a category' and create your listing",
-      "1": "Find the best 'Suggestions' from around the world",
+      "1": "Find the best 'suggestions' from around the world",
       "2": "'Something new' suggest your own idea (mods will approve it asap)"
     }
   },
@@ -166,12 +165,8 @@
           "2": "More Happiness Movement"
         }
       },
-      "5": {
-        "title": "Shop",
-        "content": {
-          "0": "Public Happiness Shop"
-        }
-      }
+      "5": "Shop",
+      "6": "Activities"
     }
   },
   "sideNav": {
@@ -190,12 +185,7 @@
           "5": "Focallocal in the News"
         }
       },
-      "4": {
-        "title": "Shop",
-        "content": {
-          "0": "Public Happiness Shop"
-        }
-      },
+      "4": "Shop",
       "5": {
         "title": "Projects",
         "content": {
@@ -203,7 +193,8 @@
           "1": "Brighter Tomorrow Map",
           "2": "More Happiness Movement"
         }
-      }
+      },
+      "6": "Activites"
     }
   },
   "calendar": {
@@ -234,7 +225,7 @@
       "0": "Toggle All"
     },
     "links": {
-      "0": "http://news.focallocal.org/gather-about"
+      "0": "http://about.focallocal.org/"
     }
   },
   "event": {
