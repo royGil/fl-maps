@@ -1,0 +1,40 @@
+@import '/imports/client/stylesheets/variables.scss';
+
+@media screen and (max-width: 750px) {
+
+  #map-container {
+
+    #map {
+      height: calc(55vh - #{$menu-height});
+      width: 100% !important;
+    }
+
+    #events-list {
+      position: absolute;
+      top: auto;
+      bottom: 0;
+      height: calc(55vh - #{$menu-height});
+      width: 100%;
+      transform: translateX(0);
+    }
+
+    #minimize {
+      display: none;
+    }
+
+    #filters-list {
+      width: 100%;
+      transform: translateY(-100vh);
+      z-index: 3;
+
+      &.show {
+        transform: translateY(0);
+      }
+    }
+
+    #event-info {
+      top: 0;
+      width: 100%;
+    }
+  }
+}

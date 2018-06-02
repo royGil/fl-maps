@@ -1,0 +1,45 @@
+@import '/imports/client/stylesheets/variables.scss';
+
+#filters-list {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: calc(100vh - #{$menu-height});
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  transform: translate(350px, calc(-100vh - #{$menu-height}));
+  transition: transform .3s ease;
+  will-change: transform;
+  z-index: 1;
+  overflow-y: auto;
+
+  &.show {
+    transform: translate(350px, 0);
+  }
+
+  .list-group-item {
+
+    &:hover {
+      z-index: 0 !important;
+    }
+  }
+
+  .title {
+    height: calc(100% + 20px);
+    position: relative;
+    text-align: center;
+    font-weight: bolder;
+
+    .close {
+      position: absolute;
+      top: 17px;
+      right: 18px;
+      font-size: .9em;
+    }
+
+    .custom-checkbox {
+      position: absolute;
+      top: -5px;
+      left: 20px;
+    }
+  }
+}

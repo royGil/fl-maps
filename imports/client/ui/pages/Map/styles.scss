@@ -1,0 +1,39 @@
+@import '/imports/client/stylesheets/variables.scss';
+
+body.overflow {
+  overflow: hidden;
+}
+
+#map-container {
+  position: relative;
+  height: calc(100vh - #{$menu-height});
+
+  &.minimized {
+
+    #events-list, #event-info {
+      transform: translateX(-#{$map-events-list-width});
+    }
+
+    #map {
+      width: 100%;
+    }
+
+    button#minimize {
+      left: -25px;
+    }
+  }
+
+  #map {
+    height: 100%;
+    width: calc(100% - #{$map-events-list-width});
+    float: right;
+    transition: width .2s ease;
+  }
+
+  #map-error {
+    position: absolute;
+    right: 0;
+    width: calc(100% - #{$map-events-list-width});
+    text-align: center;
+  }
+}

@@ -1,0 +1,15 @@
+@import '/imports/client/stylesheets/variables.scss';
+
+#first-section {
+
+  margin-bottom: 25%;
+
+  &>.container {
+    position: relative;
+    top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+}

@@ -1,0 +1,160 @@
+@import './variables.scss';
+@import './bootstrap.scss';
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500');
+
+body {
+  overflow-x: hidden;
+}
+
+* {
+  font-family: $default-font;
+}
+
+// Apply a default black-lighter color for all elements
+body, h1, h2, h3, h4, h5, p, span {
+  color: $black-lighter;
+}
+
+// Button
+
+.btn {
+  color: #fff;
+  font-weight: 400;
+  border-radius: 10px;
+
+  &:active, &:focus {
+    box-shadow: none !important;
+  }
+
+  &.btn-secondary {
+    background-color: $green;
+    border: #00a955;
+
+    &:active, &:hover {
+      background-color: $green-darker !important;
+    }
+  }
+
+  &.disabled {
+    background-color: $green-darker !important;
+  }
+}
+
+// Social Buttons
+
+.btn.social {
+  height: 36px;
+  width: 100px;
+  border: none;
+  margin-right: 5px;
+
+  &.fa-facebook-f {
+    background-color: #3B5998 !important;
+  }
+
+  &.fa-twitter {
+    background-color: #55ACEE !important;
+  }
+
+  &.fa-google-plus-g {
+    background-color: #DD4B39 !important;
+  }
+
+  &.btn-couchsurfing {
+    background-image: url('/images/icons/couchsurfing-icon.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #d2480a !important;;
+  }
+
+  &.btn-eventbrite {
+    background-size: contain;
+    background-image: url('/images/icons/eventbrite-icon.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgb( 300, 111, 0) !important;
+  }
+}
+
+// Anchor Links
+
+a {
+  outline: none;
+}
+
+// Blockquote
+
+blockquote {
+  border-left: 5px solid;
+  padding-left: 20px;
+}
+
+// Uniforms
+
+.day-picker-modal {
+  max-width: 300px !important;
+}
+
+.input-icon {
+  position: relative;
+
+  input {
+    height: 50px;
+    width: 350px;
+    box-shadow: none;
+  }
+
+  .fas {
+    position: absolute;
+    right: 13px;
+    top: 16px;
+    color: #495057;
+    font-size: 1.15em;
+    opacity: .4;
+  }
+}
+
+.characters-left {
+  font-style: italic;
+}
+
+// NProgress
+
+#nprogress {
+
+  .bar {
+    background: $green !important;
+  }
+}
+
+// DatePicker
+
+.DayPicker-Day {
+  height: 38px;
+  width: 38px;
+  padding: 0 !important;
+
+  // Selected days
+  &.DayPicker-Day--selected:not(.DayPicker-Day--disabled):not(.DayPicker-Day--outside) {
+    height: 38px;
+    width: 38px;
+  }
+}
+
+// Loaders
+
+.ball-beat > div {
+  background-color: rgba(0, 0, 0, .7) !important;
+  animation-duration: 1s;
+}
+
+.small-letters-color-transition {
+  font-size: .8em;
+  cursor: pointer;
+  color: rgba(50, 50, 50, 1);
+  transition: color .2s ease;
+
+  &:hover {
+    color: rgba(0, 0, 0, 1);
+  }
+}
